@@ -29,6 +29,7 @@ h1 {
 	font-size: 2.488rem;
 	font-weight: 700;
 	line-height: 3.5rem;
+	margin-bottom: 1rem;
 }
 
 h2 {
@@ -44,7 +45,7 @@ h4 {
 }
 
 h5 {
-	font-size: 1.2rem;
+	font-size: 1.125rem;
 }
 
 p {
@@ -59,7 +60,6 @@ button {
 
 button {
 	padding: 0.6rem 0.9rem;
-	box-shadow: -7px -2px 61px -14px rgba(0, 0, 0, 0.59);
 	outline: none;
 	border: none;
 	cursor: pointer;
@@ -115,6 +115,15 @@ button:hover {
 	-moz-transition: 0.2s ease-in-out;
 	-ms-transition: 0.2s ease-in-out;
 	-o-transition: 0.2s ease-in-out;
+}
+
+.btn-transparent {
+	background-color: #fcfcfc00;
+	border: 1px solid #2b3752d1;
+}
+
+.hidden {
+	display: none;
 }
 
 /* rule untuk header */
@@ -190,10 +199,6 @@ button:hover {
 	color: #fcfcfc;
 }
 
-.article-hero h1 {
-	margin-bottom: 1rem;
-}
-
 .article-hero p {
 	margin-bottom: 1.5rem;
 	line-height: 1.5rem;
@@ -225,7 +230,7 @@ button:hover {
 }
 
 .text-introduce-bali p:first-of-type {
-	margin: 1rem 0;
+	margin-bottom: 1rem;
 }
 
 .text-introduce-bali {
@@ -254,7 +259,6 @@ button:hover {
 
 .top-destination h1 {
 	width: 60%;
-	margin-bottom: 1rem;
 }
 
 .top-destination > p {
@@ -325,6 +329,123 @@ button:hover {
 }
 
 /* ini bagian aktivitas turis bali */
+.tourist-activity {
+	align-items: center;
+}
+
 .tourist-activity > div:first-of-type {
 	text-align: center;
+}
+
+.con-tourist-activity {
+	flex-wrap: wrap;
+	gap: 1.4rem;
+	justify-content: space-between;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.card-tourist-activity {
+	width: 32%;
+	border: 1px solid #2b3752b4;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
+.card-tourist-activity:hover {
+	box-shadow: 0px 1px 12px 8px rgba(0, 0, 0, 0.16);
+}
+
+.img-tourist-activity {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	aspect-ratio: 4/3;
+	overflow: hidden;
+}
+
+.card-tourist-activity img {
+	width: 100%;
+}
+
+.bottom-card-activity {
+	padding: 1rem;
+}
+
+.category {
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.bottom-card-activity h4 {
+	margin: 0.8rem 0 1rem;
+}
+
+.underline-h4 {
+	text-decoration: underline;
+}
+
+/* destinasi pilihan */
+.prefer-destination {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	justify-content: center;
+	background-color: #f4f7ed;
+}
+
+.prefer-destination > div:first-of-type {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.card-prefer-destination {
+	width: 18%;
+	position: relative;
+	aspect-ratio: 4/5;
+	overflow: hidden;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.card-prefer-destination div {
+	z-index: 2;
+	justify-content: center;
+	align-items: flex-end;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.card-prefer-destination div h5 {
+	color: #fcfcfc;
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+.card-prefer-destination img {
+	position: absolute;
+	width: 100%;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.con-prefer-destination {
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
 }
