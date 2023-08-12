@@ -3,7 +3,8 @@
 #2B3752
 #F4F7ED
 #2E6E65
-#86EE60 */
+#86EE60 
+#e8eeda*/
 
 * {
 	box-sizing: border-box;
@@ -13,11 +14,7 @@
 }
 
 body {
-	background-color: #fcfcfc;
-}
-
-.padding {
-	padding: 0 4%;
+	background-color: #ffffff;
 }
 
 h1,
@@ -30,6 +27,8 @@ h5 {
 
 h1 {
 	font-size: 2.488rem;
+	font-weight: 700;
+	line-height: 3.5rem;
 }
 
 h2 {
@@ -58,27 +57,89 @@ button {
 	font-family: "Poppins", sans-serif;
 }
 
-/* rule untuk header */
-header {
-	margin-bottom: 50rem;
+button {
+	padding: 0.6rem 0.9rem;
+	box-shadow: -7px -2px 61px -14px rgba(0, 0, 0, 0.59);
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 0.9rem;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
+
+button:hover {
+	box-shadow: 1px 1px 13px 4px rgba(0, 0, 0, 0.37);
+}
+
+.padding {
+	padding: 0 4%;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.margin-top {
+	margin-top: 7rem;
+}
+
+.mobile-version {
+	display: none;
+}
+
+.color-h {
+	color: #2b3752;
+}
+
+.hover-img:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+
+.transisi-img {
+	transition: 0.2s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-ms-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+}
+
+/* rule untuk header */
 
 .nav-bar {
 	width: 100%;
 	padding: 0.7rem 4% 0.9rem;
-	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
 	top: 0;
 	transition: 0.3s ease-in-out;
+	z-index: 2;
 }
 
 .nav-active {
-	background-color: #2b3752b0;
+	background-color: #2b3752e7;
 	box-shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.159);
 	transition: 0.3s ease-in-out;
+}
+
+.nav-active .list-navbar ul li a:hover {
+	color: #e8eeda;
+	text-decoration-color: #e8eeda;
+	-moz-text-decoration-color: #e8eeda;
 }
 
 .navbar-logo {
@@ -91,7 +152,7 @@ header {
 
 .list-navbar ul li {
 	display: inline-block;
-	margin-right: 0.8rem;
+	margin-right: 1rem;
 }
 
 .list-navbar ul li:last-of-type {
@@ -100,22 +161,22 @@ header {
 
 .list-navbar ul li a {
 	color: #fcfcfc;
-	font-weight: 500;
-	opacity: 0.8;
+	font-weight: 400;
 }
 
 .list-navbar ul li a:hover {
-	opacity: 1;
+	color: #86ee60;
 	transition: 0.2s ease-in-out;
 	-webkit-transition: 0.2s ease-in-out;
 	-moz-transition: 0.2s ease-in-out;
 	-ms-transition: 0.2s ease-in-out;
 	-o-transition: 0.2s ease-in-out;
+	text-decoration: underline;
+	text-decoration-color: #86ee60;
+	-moz-text-decoration-color: #86ee60;
 }
 
 .hero {
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
@@ -130,8 +191,6 @@ header {
 }
 
 .article-hero h1 {
-	font-weight: 700;
-	line-height: 3.5rem;
 	margin-bottom: 1rem;
 }
 
@@ -142,18 +201,8 @@ header {
 
 .explore,
 .book-now {
-	padding: 0.6rem 0.9rem;
 	background-color: #2b3752;
 	color: #fcfcfc;
-	outline: none;
-	border: none;
-	cursor: pointer;
-	font-size: 1rem;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
 }
 
 .explore {
@@ -165,62 +214,117 @@ header {
 	border: 1px solid;
 }
 
-@media only screen and (max-width: 769px) {
-	.nav-bar {
-		background-color: #ffffff43;
-		transition: 0.3s ease-in-out;
-	}
+/* introduce bali */
+.introduce-bali {
+	justify-content: space-between;
+}
 
-	.humburger {
-		display: block;
-		cursor: pointer;
-	}
+.text-introduce-bali p {
+	color: #161515;
+	line-height: 1.7rem;
+}
 
-	.humburger .line {
-		width: 30px;
-		background-color: #fefefe;
-		height: 3px;
-		margin: 6px 0;
-		border-radius: 2px;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		-ms-border-radius: 2px;
-		-o-border-radius: 2px;
-	}
+.text-introduce-bali p:first-of-type {
+	margin: 1rem 0;
+}
 
-	.list-navbar {
-		height: 0;
-		position: absolute;
-		top: 70.4px;
-		left: 0;
-		right: 0;
-		width: 100vw;
-		background-color: #f1f1e8;
-		transition: 0.2s;
-		overflow: hidden;
-		transition: 0.5s ease-in-out;
-		-webkit-transition: 0.5s ease-in-out;
-		-moz-transition: 0.5s ease-in-out;
-		-ms-transition: 0.5s ease-in-out;
-		-o-transition: 0.5s ease-in-out;
-	}
+.text-introduce-bali {
+	justify-content: center;
+	padding-right: 3rem;
+	width: 50%;
+}
 
-	.list-navbar ul {
-		text-align: center;
-		opacity: 0;
-	}
+.img-introduce-bali {
+	width: 45%;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+}
 
-	.list-navbar ul li {
-		display: block;
-		margin: 1rem 0;
-	}
+.img-introduce-bali img {
+	width: 100%;
+	border: 1px solid #2b375277;
+}
 
-	.list-navbar.active-humburger {
-		/* height: 218px; */
-		height: 1000px;
-	}
+/* bagian top destionation */
+.top-destination {
+	padding-bottom: 5rem;
+	padding-top: 5rem;
+	background-color: #f4f7ed;
+}
 
-	.list-navbar.active-humburger ul {
-		opacity: 1;
-	}
+.top-destination h1 {
+	width: 60%;
+	margin-bottom: 1rem;
+}
+
+.top-destination > p {
+	width: 60%;
+	line-height: 1.5rem;
+	margin-bottom: 4rem;
+}
+
+.con-top-destionation {
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.card-top-destination {
+	width: 31%;
+}
+
+.card-top-destination div.flex-row {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-top-destination div.flex-row span {
+	font-size: 0.825rem;
+	padding: 0.3rem 0.6rem;
+	align-items: center;
+	border: 1px solid #2b37528b;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.card-top-destination span.flex-row i {
+	margin-right: 0.5rem;
+	color: #2e6e65;
+}
+
+.card-top-destination span.flex-row p {
+	color: #2e6e65;
+	opacity: 0.8;
+}
+
+.card-top-destination > p {
+	margin-top: 1.5rem;
+	line-height: 1.5rem;
+}
+
+.img-destination-top {
+	aspect-ratio: 16/9;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+}
+
+.img-destination-top img {
+	width: 100%;
+}
+
+.top-destination span button {
+	background-color: #f4f7ed;
+	border: 1px solid #2b3752;
+}
+
+.top-destination span a {
+	margin-left: 1rem;
+	color: #2e6e65;
+}
+
+/* ini bagian aktivitas turis bali */
+.tourist-activity > div:first-of-type {
+	text-align: center;
 }

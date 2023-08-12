@@ -1,0 +1,59 @@
+@media only screen and (max-width: 769px) {
+	.nav-bar {
+		background-color: #2b3752e7;
+		transition: 0.3s ease-in-out;
+	}
+
+	.humburger {
+		display: block;
+		cursor: pointer;
+	}
+
+	.humburger .line {
+		width: 30px;
+		background-color: #fefefe;
+		height: 3px;
+		margin: 6px 0;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+	}
+
+	.list-navbar {
+		height: 0;
+		position: absolute;
+		top: 70.4px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background-color: #2b3752e7;
+		transition: 0.2s;
+		overflow: hidden;
+		transition: 0.5s ease-in-out;
+		-webkit-transition: 0.5s ease-in-out;
+		-moz-transition: 0.5s ease-in-out;
+		-ms-transition: 0.5s ease-in-out;
+		-o-transition: 0.5s ease-in-out;
+	}
+
+	.list-navbar ul {
+		text-align: center;
+		opacity: 0;
+	}
+
+	.list-navbar ul li {
+		display: block;
+		margin: 1rem 0;
+	}
+
+	.list-navbar.active-humburger {
+		/* height: 218px; */
+		height: 1000px;
+	}
+
+	.list-navbar.active-humburger ul {
+		opacity: 1;
+	}
+}
