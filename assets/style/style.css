@@ -75,8 +75,13 @@ button:hover {
 	box-shadow: 1px 1px 13px 4px rgba(0, 0, 0, 0.37);
 }
 
-.padding {
+.padding-x {
 	padding: 0 4%;
+}
+
+.padding-y {
+	padding-top: 4.5rem;
+	padding-bottom: 5rem;
 }
 
 .flex-row {
@@ -89,9 +94,9 @@ button:hover {
 	flex-direction: column;
 }
 
-.margin-top {
-	margin-top: 7rem;
-}
+/* .margin-top {
+	margin-top: 5rem;
+} */
 
 .mobile-version {
 	display: none;
@@ -122,11 +127,15 @@ button:hover {
 	border: 1px solid #2b3752d1;
 }
 
-.hidden {
-	display: none;
+.hidden,
+.small-device {
+	display: none !important;
 }
 
 /* rule untuk header */
+header {
+	margin-bottom: 2.5rem;
+}
 
 .nav-bar {
 	width: 100%;
@@ -191,7 +200,6 @@ button:hover {
 	height: 100vh;
 	background-image: url("/assets/image/hero-img.jpg");
 	background-size: cover;
-	/* object-fit: cover; */
 }
 
 .article-hero {
@@ -252,8 +260,6 @@ button:hover {
 
 /* bagian top destionation */
 .top-destination {
-	padding-bottom: 5rem;
-	padding-top: 5rem;
 	background-color: #f4f7ed;
 }
 
@@ -340,7 +346,7 @@ button:hover {
 .con-tourist-activity {
 	flex-wrap: wrap;
 	gap: 1.4rem;
-	justify-content: space-between;
+	justify-content: center;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
 }
@@ -392,10 +398,13 @@ button:hover {
 	text-decoration: underline;
 }
 
+.view-all {
+	display: block;
+	margin: 0 auto;
+}
+
 /* destinasi pilihan */
 .prefer-destination {
-	padding-top: 5rem;
-	padding-bottom: 5rem;
 	justify-content: center;
 	background-color: #f4f7ed;
 }

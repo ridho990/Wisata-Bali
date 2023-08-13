@@ -1,8 +1,21 @@
 @media only screen and (max-width: 901px) {
-	.nav-bar {
+	.padding-y {
+		padding-top: 4rem;
+	}
+
+	.top-destination h1,
+	.tourist-activity div h1,
+	.prefer-destination div h1,
+	.galery-photo h1,
+	.testimoni h1 {
+		margin-bottom: 0.6rem;
+	}
+
+	/* bagian navbar */
+	/* .nav-bar {
 		background-color: #2b3752e7;
 		transition: 0.3s ease-in-out;
-	}
+	} */
 
 	.humburger {
 		display: block;
@@ -48,6 +61,10 @@
 		margin: 1rem 0;
 	}
 
+	.list-navbar ul li a:hover {
+		color: #fcfcfc;
+	}
+
 	.list-navbar.active-humburger {
 		/* height: 218px; */
 		height: 1000px;
@@ -55,5 +72,173 @@
 
 	.list-navbar.active-humburger ul {
 		opacity: 1;
+	}
+
+	/* bagian hero */
+	.article-hero {
+		width: 70%;
+	}
+
+	/* pengenalan bali */
+	.introduce-bali h1 {
+		margin-bottom: 1.5rem;
+	}
+
+	.small-device {
+		display: block !important;
+	}
+
+	.higher-device {
+		display: none;
+	}
+
+	.text-introduce-bali {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.img-introduce-bali.small-device {
+		margin-bottom: 1rem;
+		width: 100%;
+		aspect-ratio: 4/3;
+	}
+
+	/* bagian top destionation */
+	.top-destination h1,
+	.top-destination p {
+		width: 75%;
+	}
+
+	.top-destination > p,
+	.con-top-destionation {
+		margin-bottom: 2rem;
+	}
+
+	.card-top-destination div.flex-row {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.card-top-destination div.flex-row h3 {
+		margin-bottom: 0.6rem;
+	}
+
+	.img-destination-top,
+	.card-top-destination > p {
+		margin-top: 1rem;
+	}
+
+	/* tourist activity */
+	.con-tourist-activity {
+		margin: 3rem 0;
+	}
+
+	.card-tourist-activity {
+		width: 31%;
+	}
+
+	/* prefer destination */
+	.prefer-destination > div:first-of-type {
+		margin-bottom: 3rem;
+	}
+
+	.con-prefer-destination {
+		gap: 1rem;
+	}
+}
+
+@media only screen and (max-width: 431px) {
+	h1 {
+		font-size: 1.802rem;
+		line-height: 2.5rem;
+	}
+
+	h2 {
+		font-size: 1.602rem;
+	}
+
+	h3 {
+		font-size: 1.424rem;
+	}
+
+	h4 {
+		font-size: 1.266rem;
+	}
+
+	h5 {
+		font-size: 1.125rem;
+	}
+
+	.padding-y {
+		padding-top: 3rem;
+		padding-bottom: 4rem;
+	}
+
+	/* ini adalah bagian header */
+	.article-hero {
+		width: 100%;
+	}
+
+	/* ini bagian destinasi populer */
+	#top-destination div.con-top-destionation.flex-row {
+		flex-direction: column;
+	}
+
+	.card-top-destination {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	.card-top-destination div.flex-row {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	div.card-top-destination div.flex-row h3 {
+		margin-bottom: 0;
+	}
+
+	.top-destination h1,
+	.top-destination p {
+		width: 100%;
+	}
+
+	/* aktifitas turis */
+	#tourist-activity > div:first-of-type {
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#tourist-activity h1 {
+		text-align: center;
+		width: 80%;
+	}
+
+	#tourist-activity .con-tourist-activity {
+		margin-top: 2rem;
+		margin-bottom: 2.5rem;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		justify-content: flex-start;
+	}
+
+	#tourist-activity .card-tourist-activity {
+		display: flex;
+		flex-direction: column;
+		flex: 0 0 100%;
+		scroll-snap-align: start;
+		box-shadow: none;
+	}
+
+	/* destinasi pilihan */
+	.prefer-destination > div:first-of-type {
+		margin-bottom: 2rem;
+	}
+
+	.card-prefer-destination {
+		width: 47%;
 	}
 }

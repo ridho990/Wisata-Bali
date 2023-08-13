@@ -19,8 +19,7 @@ let imgPreferDestination = document.querySelectorAll(
 let btnActive = 0;
 
 window.onscroll = () => {
-	console.log("coba");
-	if (window.scrollY > 50 && screen.width > 768) {
+	if (window.scrollY > 50) {
 		navbar.classList.add("nav-active");
 	} else {
 		navbar.classList.remove("nav-active");
