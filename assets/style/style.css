@@ -347,7 +347,7 @@ header {
 
 .con-tourist-activity {
 	flex-wrap: wrap;
-	gap: calc(4% / 2);
+	gap: 1.3rem;
 	justify-content: center;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
@@ -652,11 +652,17 @@ footer h5 {
 
 footer ul li {
 	list-style: none;
+	cursor: pointer;
 }
 
 footer ul li a {
 	color: #fcfcfc;
 	line-height: 1.8rem;
+	opacity: 0.8;
+}
+
+footer ul li a:hover {
+	opacity: 1;
 }
 
 form input {
@@ -664,12 +670,12 @@ form input {
 }
 
 .con-copyright a,
-.advice,
+.advice label,
 footer h5 {
 	color: #fcfcfc;
 }
 
-form .advice {
+form .advice-input {
 	width: 15rem;
 	padding: 0.7rem 1rem;
 	margin: 0.8rem 0;
